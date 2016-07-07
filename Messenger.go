@@ -48,7 +48,8 @@ func HttpHandler(response http.ResponseWriter, request *http.Request) {
 	}
 	db.AutoMigrate(&Mbot{})
 	log.Println("DB Migrated ....")
-	//db.Create(Mbot{Name: "PK", Sendid: 123, Secretstring: "sdkjaskdjh"})
+	db.Create(Mbot{Name: "PK", Sendid: 123, Secretstring: "sdkjaskdjh"})
+	log.Println("Record Stored ....")
 	//var mbot Mbot
 	//log.Println(db.First(&mbot, 1))
 
