@@ -65,7 +65,9 @@ func Dbview(response http.ResponseWriter, request *http.Request) {
 		log.Fatal(err)
 	}
 	var mbot1 []Mbot
-	log.Println(db.Find(&mbot1))
+	var i int
+	i = db.Find(&mbot1).Count(&i)
+	log.Println(i)
 
 }
 func main() {
