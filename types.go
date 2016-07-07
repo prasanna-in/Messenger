@@ -4,13 +4,13 @@ import (
 	"encoding/json"
 )
 
-type Integer int32
+//type Integer int32
 
 type ID interface {
 	ID() Integer
 }
 
-func (i Integer) ID() Integer {
+func (i Integer) ID() int32 {
 	return i
 }
 
@@ -21,10 +21,10 @@ type TGResponse struct {
 }
 
 type TGID struct {
-	Id Integer `json:"id"`
+	Id int32 `json:"id"`
 }
 
-func (t TGID) ID() Integer {
+func (t TGID) ID() int32 {
 	return t.Id
 }
 
@@ -41,13 +41,13 @@ type TGGroupChat struct {
 }
 
 type TGUserGroupChat struct {
-	Id Integer        `json:"id"`
+	Id int32        `json:"id"`
 	TGUser
 	TGGroupChat
 }
 
 type TGUpdate struct {
-	UpdateId Integer   `json:"update_id"`
+	UpdateId int32   `json:"update_id"`
 	Message  TGMessage `json:"message,omitempty"`
 }
 type TGLocation struct {
@@ -57,12 +57,12 @@ type TGLocation struct {
 }
 
 type TGMessage struct {
-	MessageId      Integer         `json:"message_id"`       // Unique message identifier
+	MessageId      int32         `json:"message_id"`       // Unique message identifier
 	From           TGUser          `json:"from"`             // Sender
-	Date           Integer         `json:"date"`             // Date the message was sent in Unix time
+	Date           int32         `json:"date"`             // Date the message was sent in Unix time
 	Chat           TGUserGroupChat `json:"chat"`             // Conversation the message belongs to — user in case of a private message, GroupChat in case of a group
 	ForwardFrom    *TGUser         `json:"forward_from"`     // Optional. For forwarded messages, sender of the original message
-	ForwardDate    *Integer        `json:"forward_date"`     // Optional. For forwarded messages, date the original message was sent in Unix time
+	ForwardDate    *int32        `json:"forward_date"`     // Optional. For forwarded messages, date the original message was sent in Unix time
 	ReplyToMessage *TGMessage      `json:"reply_to_message"` // Optional. For replies, the original message. Note that the Message object in this field will not contain further reply_to_message fields even if it itself is a reply.
 	Text           string          `json:"text"`             // Optional. For text messages, the actual UTF-8 text of the message
 								 //Audio               *Audio          `json:"asdf"` // Optional. Message is an audio file, information about the file
