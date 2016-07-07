@@ -55,6 +55,7 @@ func HttpHandler(response http.ResponseWriter, request *http.Request) {
 	//log.Println("Table Created .....")
 	name := request.FormValue("Name")
 	secretstring := request.FormValue("secret")
+	log.Println(secretstring)
 	mbot := Mbot{Name: name,Sendid: 23, Secretstring: secretstring}
 	db.NewRecord(mbot)
 	db.Create(&mbot)
