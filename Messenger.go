@@ -18,7 +18,7 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
 	}
 	json.Unmarshal(body,&Telegramresponse)
 	text := Telegramresponse.Message.String()
-	log.Fatal(text)
+	log.Println(text)
 	switch text {
 	case "/Register":
 		log.Fatal(Telegramresponse.Message.Chat.TGGroupChat)
