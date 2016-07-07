@@ -19,6 +19,7 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
 	json.Unmarshal(body,&Telegramresponse)
 	text := Telegramresponse.Message.String()
 	log.Println(text)
+	log.Println("PM was Here")
 	if text == "/Register"{
 		log.Println("PK was Here")
 	}
