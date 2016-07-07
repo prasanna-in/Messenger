@@ -21,7 +21,7 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
 	log.Fatal(text)
 	switch text {
 	case "/Register":
-		log.Fatal(Telegramresponse.Message.Chat.TGGroupChat.ID())
+		log.Fatal(Telegramresponse.Message.Chat.TGGroupChat)
 	default:
 		log.Fatal("Default Called")
 	}
