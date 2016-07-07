@@ -30,19 +30,30 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request) {
 	json.Unmarshal(body, &Telegramresponse)
 	text := Telegramresponse.Message.Text
 	log.Println(text)
-	switch text {
-	case "/Register":
-		var val int
-		//log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
-		val = Telegramresponse.Message.Chat.Id
-		log.Println("The Group ID is : " + strconv.Itoa(val))
-	default:
-		log.Println(Telegramresponse.Message.From.Username)
+	//switch text {
+	//case "/Register":
+	//	var val int
+	//	//log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
+	//	val = Telegramresponse.Message.Chat.Id
+	//	log.Println("The Group ID is : " + strconv.Itoa(val))
+	//default:
+	//	log.Println(Telegramresponse.Message.From.Username)
+	//}
+	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
+	if err != nil {
+		log.Fatal(err)
 	}
+	defer db.Close()
+	var mbot1 Mbot
+	db.Where("Secretstring = ?",text).First(&mbot1)
+	if mbot1.Secretstring == text{
+		log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
+	}
+
 }
 
 
-func HttpHandler(response http.ResponseWriter, request *http.Request) {
+func Dbcreate(response http.ResponseWriter, request *http.Request) {
 
 	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 	if err != nil {
@@ -71,7 +82,7 @@ func Dbview(response http.ResponseWriter, request *http.Request) {
 }
 func main() {
 	http.HandleFunc("/testing123", HttpHandler2)
-	http.HandleFunc("/Create", HttpHandler)
+	http.HandleFunc("/Create", Dbcreate)
 	http.HandleFunc("/view", Dbview)
 	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }
