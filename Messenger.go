@@ -10,7 +10,7 @@ import (
 	"strconv"
 )
 
-type Integer int32
+type int32 Integer
 
 func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
 	log.Println("Token Call Received")
