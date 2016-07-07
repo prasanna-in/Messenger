@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="55b12824-9e70-44bb-bdaf-71b241ee354d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Messenger.go" afterPath="$PROJECT_DIR$/Messenger.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/types.go" afterPath="$PROJECT_DIR$/types.go" />
     </list>
     <ignored path="Messenger.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +28,10 @@
         <entry file="file://$PROJECT_DIR$/Messenger.go">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.5414438">
-              <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+              <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
               <folding>
                 <element signature="e#14#80#0" expanded="true" />
-                <marker date="1467876114000" expanded="true" signature="427:488" placeholder="/.../" />
+                <marker date="1467876566000" expanded="true" signature="427:488" placeholder="/.../" />
               </folding>
             </state>
           </provider>
@@ -303,21 +304,21 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
           <folding>
-            <marker date="1467875875000" expanded="true" signature="21:41" placeholder="..." />
-            <marker date="1467875875000" expanded="true" signature="81:98" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="130:143" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="168:258" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="277:304" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="333:349" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="370:502" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="528:551" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="581:605" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="628:717" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="741:819" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="843:3544" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="1818:2645" placeholder="/.../" />
-            <marker date="1467875875000" expanded="true" signature="3167:3333" placeholder="/.../" />
-            <marker date="1467875875000" expanded="true" signature="3546:3806" placeholder="/.../" />
+            <marker date="1467876566000" expanded="true" signature="21:41" placeholder="..." />
+            <marker date="1467876566000" expanded="true" signature="81:98" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="130:143" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="168:258" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="277:304" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="333:349" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="370:502" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="528:551" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="581:636" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="659:748" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="772:850" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="874:3575" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="1849:2676" placeholder="/.../" />
+            <marker date="1467876566000" expanded="true" signature="3198:3364" placeholder="/.../" />
+            <marker date="1467876566000" expanded="true" signature="3577:3837" placeholder="/.../" />
           </folding>
         </state>
       </provider>
@@ -332,24 +333,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/types.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64171124">
-          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.6818182">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <marker date="1467875875000" expanded="true" signature="21:41" placeholder="..." />
-            <marker date="1467875875000" expanded="true" signature="81:98" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="130:143" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="168:258" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="277:304" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="333:349" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="370:502" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="528:551" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="581:605" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="628:717" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="741:819" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="843:3544" placeholder="{...}" />
-            <marker date="1467875875000" expanded="true" signature="1818:2645" placeholder="/.../" />
-            <marker date="1467875875000" expanded="true" signature="3167:3333" placeholder="/.../" />
-            <marker date="1467875875000" expanded="true" signature="3546:3806" placeholder="/.../" />
+            <marker date="1467876566000" expanded="true" signature="21:41" placeholder="..." />
+            <marker date="1467876566000" expanded="true" signature="81:98" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="130:143" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="168:258" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="277:304" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="333:349" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="370:502" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="528:551" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="581:636" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="659:748" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="772:850" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="874:3575" placeholder="{...}" />
+            <marker date="1467876566000" expanded="true" signature="1849:2676" placeholder="/.../" />
+            <marker date="1467876566000" expanded="true" signature="3198:3364" placeholder="/.../" />
+            <marker date="1467876566000" expanded="true" signature="3577:3837" placeholder="/.../" />
           </folding>
         </state>
       </provider>
@@ -357,10 +358,10 @@
     <entry file="file://$PROJECT_DIR$/Messenger.go">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5414438">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
           <folding>
             <element signature="e#14#80#0" expanded="true" />
-            <marker date="1467876114000" expanded="true" signature="427:488" placeholder="/.../" />
+            <marker date="1467876566000" expanded="true" signature="427:488" placeholder="/.../" />
           </folding>
         </state>
       </provider>

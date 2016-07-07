@@ -25,7 +25,7 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
 	//}
 	switch text {
 	case "/Register":
-		log.Println(Telegramresponse)
+		log.Println(Telegramresponse.Message.Chat.Id)
 	default:
 		log.Println(Telegramresponse.Message.From.Username)
 	}

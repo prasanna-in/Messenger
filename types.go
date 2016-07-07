@@ -41,6 +41,7 @@ type TGGroupChat struct {
 }
 
 type TGUserGroupChat struct {
+	Id Integer        `json:"id"`
 	TGUser
 	TGGroupChat
 }
