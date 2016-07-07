@@ -42,10 +42,11 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request) {
 }
 func HttpHandler(response http.ResponseWriter, request *http.Request) {
 
-	_, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
+	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 	if err != nil {
 		log.Fatal(err)
 	}
+	log.Println(db)
 	//db.AutoMigrate(&Mbot{})
 	//db.Create(Mbot{Name: "PK", Sendid: 123, Secretstring: "sdkjaskdjh"})
 	//var mbot Mbot
