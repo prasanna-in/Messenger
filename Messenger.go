@@ -10,6 +10,8 @@ import (
 	"strconv"
 )
 
+type Integer int32
+
 func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
 	log.Println("Token Call Received")
 	var Telegramresponse TGUpdate
