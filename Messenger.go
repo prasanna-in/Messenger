@@ -18,14 +18,14 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
 		log.Fatal(err)
 	}
 	json.Unmarshal(body,&Telegramresponse)
-	text := Telegramresponse.Message.String()
+	text := Telegramresponse.Message.Text
 	log.Println(text)
 	//if text == "/Register"{
 	//	log.Println("PK was Here")
 	//}
 	switch text {
 	case "/Register":
-		log.Println(Telegramresponse.Message.Chat.TGGroupChat)
+		log.Println(Telegramresponse.Message)
 	default:
 		log.Println(Telegramresponse.Message.From.Username)
 	}
