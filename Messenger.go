@@ -10,6 +10,7 @@ import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/lib/pq"
 	"strconv"
+	"os/user"
 )
 
 type Mbot struct {
@@ -51,6 +52,10 @@ func HttpHandler(response http.ResponseWriter, request *http.Request) {
 	log.Println(db.HasTable(&Mbot{}))
 	db.CreateTable(&Mbot{})
 	log.Println("Table Created .....")
+	mbot := Mbot{Name:"dhjshdj",Sendid: 23, Secretstring: "kdnfkasjhd"}
+	db.NewRecord(mbot)
+	db.Create(&mbot)
+	log.Println(db.NewRecord(mbot))
 	//db.Create(Mbot{Name: "PK", Sendid: 123, Secretstring: "sdkjaskdjh"})
 	//log.Println("Record Stored ....")
 	////var mbot Mbot
