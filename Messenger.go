@@ -10,7 +10,6 @@ import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/lib/pq"
 	"strconv"
-	"os/user"
 )
 
 type Mbot struct {
