@@ -26,10 +26,11 @@
       <file leaf-file-name="Messenger.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Messenger.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6216577">
-              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.72192514">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="e#14#80#0" expanded="true" />
+                <marker date="1467872071000" expanded="true" signature="431:492" placeholder="/.../" />
               </folding>
             </state>
           </provider>
@@ -333,8 +334,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/types.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6991979">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.57887703">
+          <caret line="64" column="96" selection-start-line="64" selection-start-column="96" selection-end-line="64" selection-end-column="96" />
           <folding>
             <marker date="1467868261000" expanded="true" signature="21:48" placeholder="..." />
             <marker date="1467868261000" expanded="true" signature="88:105" placeholder="{...}" />
@@ -359,10 +360,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Messenger.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6216577">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.72192514">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="e#14#80#0" expanded="true" />
+            <marker date="1467872071000" expanded="true" signature="431:492" placeholder="/.../" />
           </folding>
         </state>
       </provider>
