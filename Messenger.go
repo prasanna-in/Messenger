@@ -55,15 +55,22 @@ func HttpHandler(response http.ResponseWriter, request *http.Request) {
 	db.NewRecord(mbot)
 	db.Create(&mbot)
 	log.Println(db.NewRecord(mbot))
-	//db.Create(Mbot{Name: "PK", Sendid: 123, Secretstring: "sdkjaskdjh"})
-	//log.Println("Record Stored ....")
+
+
+
+}
+func Dbview(response http.ResponseWriter, request *http.Request) {
+	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
+	if err != nil {
+		log.Fatal(err)
+	}
 	var mbot1 Mbot
-	////log.Println(db.First(&mbot, 1))
 	log.Println(db.Find(&mbot1))
 
 }
 func main() {
 	http.HandleFunc("/testing123", HttpHandler2)
 	http.HandleFunc("/Create", HttpHandler)
+	http.HandleFunc("/view", Dbview)
 	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }
