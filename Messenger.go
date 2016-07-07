@@ -25,7 +25,10 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
 	log.Println(text)
 	switch text {
 	case "/Register":
-		log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
+		var val int32
+		//log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
+		val = Telegramresponse.Message.Chat.Id
+		log.Println("The Group ID is : " + strconv.Itoa(val))
 	default:
 		log.Println(Telegramresponse.Message.From.Username)
 	}
