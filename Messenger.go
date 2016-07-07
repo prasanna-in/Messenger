@@ -57,8 +57,9 @@ func HttpHandler(response http.ResponseWriter, request *http.Request) {
 	log.Println(db.NewRecord(mbot))
 	//db.Create(Mbot{Name: "PK", Sendid: 123, Secretstring: "sdkjaskdjh"})
 	//log.Println("Record Stored ....")
-	////var mbot Mbot
+	var mbot1 Mbot
 	////log.Println(db.First(&mbot, 1))
+	log.Println(db.First(&mbot1))
 
 }
 func main() {
