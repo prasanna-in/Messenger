@@ -41,15 +41,7 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request) {
 	}
 }
 
-func DbConnection()(*database) {
 
-	database, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
-	if err != nil {
-		log.Fatal(err)
-	}
-	return &database
-
-}
 func HttpHandler(response http.ResponseWriter, request *http.Request) {
 
 	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
