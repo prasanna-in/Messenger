@@ -40,23 +40,33 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request) {
 		log.Println(Telegramresponse.Message.From.Username)
 	}
 }
+
+func DbConnection()(*database) {
+
+	database, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
+	if err != nil {
+		log.Fatal(err)
+	}
+	return &database
+
+}
 func HttpHandler(response http.ResponseWriter, request *http.Request) {
 
 	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 	if err != nil {
 		log.Fatal(err)
 	}
-	db.AutoMigrate(&Mbot{})
-	log.Println("DB Migrated ....")
-	log.Println(db.HasTable(&Mbot{}))
-	db.CreateTable(&Mbot{})
-	log.Println("Table Created .....")
-	mbot := Mbot{Name:"dhjshdj",Sendid: 23, Secretstring: "kdnfkasjhd"}
+	//db.AutoMigrate(&Mbot{})
+	//log.Println("DB Migrated ....")
+	//log.Println(db.HasTable(&Mbot{}))
+	//db.CreateTable(&Mbot{})
+	//log.Println("Table Created .....")
+	name := request.FormValue("Name")
+	secretstring := request.FormValue("secret")
+	mbot := Mbot{Name: name,Sendid: 23, Secretstring: secretstring}
 	db.NewRecord(mbot)
 	db.Create(&mbot)
 	log.Println(db.NewRecord(mbot))
-
-
 
 }
 func Dbview(response http.ResponseWriter, request *http.Request) {
@@ -65,8 +75,9 @@ func Dbview(response http.ResponseWriter, request *http.Request) {
 		log.Fatal(err)
 	}
 	var mbot1 Mbot
-	db.Find(&mbot1)
+	db.Last(&mbot1)
 	log.Println(mbot1.Name,mbot1.Secretstring,mbot1.Sendid)
+	db.Close()
 
 }
 func main() {
