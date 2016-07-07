@@ -4,11 +4,11 @@ import "fmt"
 import (
 	"net/http"
 	"os"
+	"log"
 )
 
 func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
-	fmt.Fprint(response,"Welcome")
-	
+	log.Println("Token Call Received")
 }
 func main() {
 	http.HandleFunc("/testing123", HttpHandler2)
