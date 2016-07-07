@@ -64,7 +64,7 @@ type TGMessage struct {
 	ForwardFrom    *TGUser         `json:"forward_from"`     // Optional. For forwarded messages, sender of the original message
 	ForwardDate    *Integer        `json:"forward_date"`     // Optional. For forwarded messages, date the original message was sent in Unix time
 	ReplyToMessage *TGMessage      `json:"reply_to_message"` // Optional. For replies, the original message. Note that the Message object in this field will not contain further reply_to_message fields even if it itself is a reply.
-	Text           string          `json:"text"`             // Optional. For text messages, the actual UTF-8 text of the message
+	Text           *string          `json:"text"`             // Optional. For text messages, the actual UTF-8 text of the message
 								 //Audio               *Audio          `json:"asdf"` // Optional. Message is an audio file, information about the file
 								 //Document            *Document       `json:"asdf"` // Optional. Message is a general file, information about the file
 								 //Photo               []PhotoSize     `json:"asdf"` // Optional. Message is a photo, available sizes of the photo
