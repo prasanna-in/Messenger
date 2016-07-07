@@ -48,7 +48,8 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request) {
 	db.Where("Secretstring = ?",text).First(&mbot1)
 	if mbot1.Secretstring == text{
 		log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
-		mbot1.Sendid = strconv.Itoa(Telegramresponse.Message.Chat.Id)
+		StringChatID := strconv.Itoa(Telegramresponse.Message.Chat.Id)
+		mbot1.Sendid = StringChatID
 		db.Save(&mbot1)
 	}
 
