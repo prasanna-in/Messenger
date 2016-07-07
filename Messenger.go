@@ -6,10 +6,10 @@ import (
 	"log"
 	"net/http"
 	"os"
-
 	"github.com/jinzhu/gorm"
 	_ "github.com/lib/pq"
 	"strconv"
+	"fmt"
 )
 
 type Mbot struct {
@@ -29,16 +29,6 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request) {
 	}
 	json.Unmarshal(body, &Telegramresponse)
 	text := Telegramresponse.Message.Text
-	log.Println(text)
-	//switch text {
-	//case "/Register":
-	//	var val int
-	//	//log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
-	//	val = Telegramresponse.Message.Chat.Id
-	//	log.Println("The Group ID is : " + strconv.Itoa(val))
-	//default:
-	//	log.Println(Telegramresponse.Message.From.Username)
-	//}
 	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 	if err != nil {
 		log.Fatal(err)
@@ -53,7 +43,6 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request) {
 	}
 
 }
-
 
 func Dbcreate(response http.ResponseWriter, request *http.Request) {
 
@@ -82,9 +71,28 @@ func Dbview(response http.ResponseWriter, request *http.Request) {
 	log.Println(mbot1.Name,mbot1.Secretstring,mbot1.Sendid)
 
 }
+func Sendmessage(response http.ResponseWriter, request *http.Request) {
+	Secrestring := request.FormValue("secret")
+	Message := request.FormValue("text")
+	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer db.Close()
+	var mbot1 Mbot
+	db.Where("Secretstring = ?",Secrestring).First(&mbot1)
+	if mbot1.Secretstring == Secrestring{
+		str := fmt.Sprintf("https://api.telegram.org/bot249456369:AAHaHfsSSkiiEPeiwqnChNX16sbS4H-JHqMß/sendMessage?chat_id=%d&text=%s", mbot1.Sendid, Message)
+		_, err := http.Get(str)
+		if err != nil {
+			log.Fatal(err)
+		}
+	}
+}
 func main() {
 	http.HandleFunc("/testing123", HttpHandler2)
 	http.HandleFunc("/Create", Dbcreate)
 	http.HandleFunc("/view", Dbview)
+	http.HandleFunc("/Sendmessage",Sendmessage)
 	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }
