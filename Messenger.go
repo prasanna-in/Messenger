@@ -52,7 +52,7 @@ func HttpHandler(response http.ResponseWriter, request *http.Request) {
 	name := request.FormValue("Name")
 	secretstring := request.FormValue("secret")
 	log.Println(secretstring)
-	mbot := Mbot{Name: name,Sendid: 23, Secretstring: secretstring}
+	mbot := Mbot{Name: name, Secretstring: secretstring}
 	db.NewRecord(mbot)
 	db.Create(&mbot)
 	log.Println(db.NewRecord(mbot))
