@@ -19,12 +19,12 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
 	json.Unmarshal(body,&Telegramresponse)
 	text := Telegramresponse.Message.String()
 	log.Println(text)
-	switch text {
-	case "/Register":
-		log.Fatal(Telegramresponse.Message.Chat.TGGroupChat)
-	default:
-		log.Fatal("Default Called")
-	}
+	//switch text {
+	//case "/Register":
+	//	log.Fatal(Telegramresponse.Message.Chat.TGGroupChat)
+	//default:
+	//	log.Fatal("Default Called")
+	//}
 }
 func main() {
 	http.HandleFunc("/testing123", HttpHandler2)
