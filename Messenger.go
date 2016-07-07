@@ -6,7 +6,7 @@ import (
 	"log"
 	"io/ioutil"
 	"encoding/json"
-	
+
 )
 
 func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
@@ -20,15 +20,15 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
 	json.Unmarshal(body,&Telegramresponse)
 	text := Telegramresponse.Message.String()
 	log.Println(text)
-	if text == "/Register"{
-		log.Println("PK was Here")
-	}
-	//switch text {
-	//case "/Register":
-	//	log.Fatal(Telegramresponse.Message.Chat.TGGroupChat)
-	//default:
-	//	log.Fatal("Default Called")
+	//if text == "/Register"{
+	//	log.Println("PK was Here")
 	//}
+	switch text {
+	case "/Register":
+		log.Println(Telegramresponse.Message.Chat.TGGroupChat)
+	default:
+		log.Println("Default Called")
+	}
 }
 func main() {
 	http.HandleFunc("/testing123", HttpHandler2)
