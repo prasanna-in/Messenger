@@ -27,7 +27,7 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
 	case "/Register":
 		log.Println(Telegramresponse.Message.Chat.TGGroupChat)
 	default:
-		log.Println(Telegramresponse.Message.Text)
+		log.Println(Telegramresponse.Message.From.Username)
 	}
 }
 func main() {
