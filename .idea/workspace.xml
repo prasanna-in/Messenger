@@ -26,11 +26,11 @@
       <file leaf-file-name="Messenger.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Messenger.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47860962">
-              <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.71925133">
+              <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
               <folding>
                 <element signature="e#14#140#0" expanded="true" />
-                <marker date="1467883602000" expanded="true" signature="1346:1347" placeholder="/.../" />
+                <marker date="1467884522000" expanded="true" signature="1346:1347" placeholder="/.../" />
               </folding>
             </state>
           </provider>
@@ -521,11 +521,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Messenger.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47860962">
-          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.71925133">
+          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
           <folding>
             <element signature="e#14#140#0" expanded="true" />
-            <marker date="1467883602000" expanded="true" signature="1346:1347" placeholder="/.../" />
+            <marker date="1467884522000" expanded="true" signature="1346:1347" placeholder="/.../" />
           </folding>
         </state>
       </provider>
