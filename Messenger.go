@@ -20,12 +20,9 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
 	json.Unmarshal(body,&Telegramresponse)
 	text := Telegramresponse.Message.Text
 	log.Println(text)
-	//if text == "/Register"{
-	//	log.Println("PK was Here")
-	//}
 	switch text {
 	case "/Register":
-		log.Println(Telegramresponse.Message.Chat.Id)
+		log.Println("The Group ID is : " + Telegramresponse.Message.Chat.Id)
 	default:
 		log.Println(Telegramresponse.Message.From.Username)
 	}
