@@ -66,7 +66,7 @@ func Dbview(response http.ResponseWriter, request *http.Request) {
 	}
 	var mbot1 Mbot
 	db.Find(&mbot1)
-	log.Println(mbot1.Name)
+	log.Println(mbot1.Name,mbot1.Secretstring,mbot1.Sendid)
 
 }
 func main() {
