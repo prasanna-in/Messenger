@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55b12824-9e70-44bb-bdaf-71b241ee354d" name="Default" comment="" />
+    <list default="true" id="55b12824-9e70-44bb-bdaf-71b241ee354d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Messenger.go" afterPath="$PROJECT_DIR$/Messenger.go" />
+    </list>
     <ignored path="Messenger.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -28,7 +30,7 @@
               <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="e#14#80#0" expanded="true" />
-                <marker date="1467872117000" expanded="true" signature="431:492" placeholder="/.../" />
+                <marker date="1467875184000" expanded="true" signature="431:492" placeholder="/.../" />
               </folding>
             </state>
           </provider>
@@ -332,8 +334,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/types.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57887703">
-          <caret line="64" column="96" selection-start-line="64" selection-start-column="96" selection-end-line="64" selection-end-column="96" />
+        <state vertical-scroll-proportion="0.8221925">
+          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
           <folding>
             <marker date="1467868261000" expanded="true" signature="21:48" placeholder="..." />
             <marker date="1467868261000" expanded="true" signature="88:105" placeholder="{...}" />
@@ -362,7 +364,7 @@
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="e#14#80#0" expanded="true" />
-            <marker date="1467872117000" expanded="true" signature="431:492" placeholder="/.../" />
+            <marker date="1467875184000" expanded="true" signature="431:492" placeholder="/.../" />
           </folding>
         </state>
       </provider>
