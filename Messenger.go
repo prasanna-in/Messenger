@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"encoding/json"
 
+	"strconv"
 )
 
 func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
@@ -22,7 +23,7 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
 	log.Println(text)
 	switch text {
 	case "/Register":
-		log.Println("The Group ID is : " + Telegramresponse.Message.Chat.Id)
+		log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
 	default:
 		log.Println(Telegramresponse.Message.From.Username)
 	}
