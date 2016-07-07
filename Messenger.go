@@ -48,11 +48,7 @@ func HttpHandler(response http.ResponseWriter, request *http.Request) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	//db.AutoMigrate(&Mbot{})
-	//log.Println("DB Migrated ....")
-	//log.Println(db.HasTable(&Mbot{}))
-	//db.CreateTable(&Mbot{})
-	//log.Println("Table Created .....")
+	defer db.Close()
 	name := request.FormValue("Name")
 	secretstring := request.FormValue("secret")
 	log.Println(secretstring)
@@ -67,10 +63,10 @@ func Dbview(response http.ResponseWriter, request *http.Request) {
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer db.Close()
 	var mbot1 Mbot
 	db.Last(&mbot1)
 	log.Println(mbot1.Name,mbot1.Secretstring,mbot1.Sendid)
-	db.Close()
 
 }
 func main() {
