@@ -59,7 +59,7 @@ func HttpHandler(response http.ResponseWriter, request *http.Request) {
 	//log.Println("Record Stored ....")
 	var mbot1 Mbot
 	////log.Println(db.First(&mbot, 1))
-	log.Println(db.First(&mbot1))
+	log.Println(db.Find(&mbot1))
 
 }
 func main() {
