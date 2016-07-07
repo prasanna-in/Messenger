@@ -6,7 +6,7 @@ import (
 	"log"
 	"io/ioutil"
 	"encoding/json"
-	"reflect"
+	
 )
 
 func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
@@ -20,7 +20,6 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
 	json.Unmarshal(body,&Telegramresponse)
 	text := Telegramresponse.Message.String()
 	log.Println(text)
-	log.Println(reflect.TypeOf(text))
 	if text == "/Register"{
 		log.Println("PK was Here")
 	}
