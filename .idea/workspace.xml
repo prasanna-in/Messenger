@@ -26,10 +26,10 @@
       <file leaf-file-name="Messenger.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Messenger.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.020053476">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5414438">
+              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
               <folding>
-                <element signature="e#14#49#0" expanded="true" />
+                <element signature="e#14#79#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -322,10 +322,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/types.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5555556">
-          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        <state vertical-scroll-proportion="1.2433155">
+          <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
           <folding>
             <marker date="1467703983000" expanded="true" signature="21:48" placeholder="..." />
             <marker date="1467703983000" expanded="true" signature="88:105" placeholder="{...}" />
@@ -348,20 +356,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Messenger.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.020053476">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5414438">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding>
-            <element signature="e#14#49#0" expanded="true" />
+            <element signature="e#14#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
