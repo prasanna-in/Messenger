@@ -1,33 +1,33 @@
 package main
 
 import (
+	"encoding/json"
+	"io/ioutil"
+	"log"
 	"net/http"
 	"os"
-	"log"
-	"io/ioutil"
-	"encoding/json"
 
-	"strconv"
-	_ "heroku.com/nullmeet/Godeps/_workspace/src/github.com/lib/pq"
 	"github.com/jinzhu/gorm"
+	_ "github.com/lib/pq"
+	"strconv"
 )
 
 type Mbot struct {
 	gorm.Model
-	Name string
-	Sendid int
+	Name         string
+	Sendid       int
 	Secretstring string
 }
 
-func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
+func HttpHandler2(response http.ResponseWriter, request *http.Request) {
 	log.Println("Token Call Received")
 	var Telegramresponse TGUpdate
 	bodystring := request.Body
 	body, err := ioutil.ReadAll(bodystring)
-	if err != nil{
+	if err != nil {
 		log.Fatal(err)
 	}
-	json.Unmarshal(body,&Telegramresponse)
+	json.Unmarshal(body, &Telegramresponse)
 	text := Telegramresponse.Message.Text
 	log.Println(text)
 	switch text {
@@ -40,16 +40,16 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request)  {
 		log.Println(Telegramresponse.Message.From.Username)
 	}
 }
-func HttpHandler(response http.ResponseWriter, request *http.Request)  {
+func HttpHandler(response http.ResponseWriter, request *http.Request) {
 
-	db,err := gorm.Open("postgres",os.Getenv("DATABASE_URL"))
-	if err != nil{
+	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
+	if err != nil {
 		log.Fatal(err)
 	}
 	db.AutoMigrate(&Mbot{})
-	db.Create(Mbot{Name: "PK",Sendid:123,Secretstring: "sdkjaskdjh"})
+	db.Create(Mbot{Name: "PK", Sendid: 123, Secretstring: "sdkjaskdjh"})
 	var mbot Mbot
-	log.Println(db.First(&mbot,1))
+	log.Println(db.First(&mbot, 1))
 
 }
 func main() {
