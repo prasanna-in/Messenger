@@ -42,6 +42,7 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request) {
 		db.Save(&mbot1)
 	}
 
+
 }
 
 func Dbcreate(response http.ResponseWriter, request *http.Request) {
@@ -85,11 +86,14 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 	if mbot1.Secretstring == Secrestring{
 		str := fmt.Sprintf("https://api.telegram.org/bot249456369:AAHaHfsSSkiiEPeiwqnChNX16sbS4H-JHqM/sendMessage?chat_id=%d&text=%s&parse_mode=markdown", mbot1.Sendid, Message)
 		log.Println(str)
-		_, err := http.Get(str)
+		resp, err := http.Get(str)
 		if err != nil {
 			log.Fatal(err)
 		}
 	}
+	var updateresponse UpdateResponse
+	json.Unmarshal(resp,&updateresponse)
+	log.Println(updateresponse.ok)
 	response.Header().Set("Server", "GO_Messenger_Bot")
 	response.WriteHeader(200)
 }
