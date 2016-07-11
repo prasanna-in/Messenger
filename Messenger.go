@@ -24,7 +24,7 @@ func SendmessageInternal(sendid int, str string) {
 	http.Get(str1)
 }
 
-func HttpHandler2(response http.ResponseWriter, request *http.Request) {
+func TelegramHandler(response http.ResponseWriter, request *http.Request) {
 	log.Println("Token Call Received")
 	var Telegramresponse TGUpdate
 	bodystring := request.Body
@@ -123,7 +123,7 @@ func Probe(response http.ResponseWriter, request * http.Request)  {
 
 }
 func main() {
-	http.HandleFunc("/testing123", HttpHandler2)
+	http.HandleFunc("/testing123", TelegramHandler)
 	http.HandleFunc("/Create", Dbcreate)
 	http.HandleFunc("/view", Dbview)
 	http.HandleFunc("/Sendmessage",Sendmessage)
