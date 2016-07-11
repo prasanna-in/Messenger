@@ -67,7 +67,8 @@ func Dbcreate(response http.ResponseWriter, request *http.Request) {
 	mbot := Mbot{Name: name, Secretstring: secretstring}
 	db.NewRecord(mbot)
 	db.Create(&mbot)
-	log.Println(db.NewRecord(mbot))
+	//log.Println(db.NewRecord(mbot))
+	log.Println("Group Created ....")
 }
 
 }
