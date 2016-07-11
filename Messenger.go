@@ -79,6 +79,7 @@ func Dbcreate(response http.ResponseWriter, request *http.Request) {
 	db.Create(&mbot)
 	//log.Println(db.NewRecord(mbot))
 	log.Println("Group Created ....")
+	fmt.Fprintf(response,"Group has been created... ")
 }
 
 }
