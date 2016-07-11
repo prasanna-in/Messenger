@@ -67,7 +67,7 @@ func Dbcreate(response http.ResponseWriter, request *http.Request) {
 	db.Where("Secretstring = ?", secretstring).First(&mbot1)
 	if mbot1.Secretstring == secretstring {
 		log.Println("User secret alredy used try another one ....")
-		fmt.Fprintln(response,"Token already registered request for a new one form shifu@thoughtworks.com")
+		fmt.Fprintf(response,"Token already registered request for a new one form shifu@thoughtworks.com")
 
 	}else {
 	log.Println(secretstring)
