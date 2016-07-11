@@ -93,14 +93,21 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 			log.Fatal(err)
 		}
 	}
-	log.Println(http.Get(str1))
 	response.Header().Set("Server", "GO_Messenger_Bot")
 	response.WriteHeader(200)
+}
+func Probe(response http.ResponseWriter, request * http.Request)  {
+
+	str := "https://api.telegram.org/bot249456369:AAHaHfsSSkiiEPeiwqnChNX16sbS4H-JHqM/sendMessage?chat_id=-122886380&text=* PK was Here  hhh*"
+	resp,_:= http.Get(str)
+	response.Write(resp)
+
 }
 func main() {
 	http.HandleFunc("/testing123", HttpHandler2)
 	http.HandleFunc("/Create", Dbcreate)
 	http.HandleFunc("/view", Dbview)
 	http.HandleFunc("/Sendmessage",Sendmessage)
+	http.HandleFunc("/probe" , Probe)
 	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }
