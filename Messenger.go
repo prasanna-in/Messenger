@@ -43,7 +43,6 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request) {
 			db.Save(&mbot1)
 		}else {
 			log.Println("Token Already Registered ....")
-			SendMessageInternal(Telegramresponse.Message.Chat.Id,"Secret Token already Regeistered ...")
 		}
 	}
 
@@ -74,14 +73,10 @@ func Dbcreate(response http.ResponseWriter, request *http.Request) {
 
 }
 
-func SendMessageInternal(sendid int,str string)  {
-	str1 := fmt.Sprintf("https://api.telegram.org/bot249456369:AAHaHfsSSkiiEPeiwqnChNX16sbS4H-JHqM/sendMessage?chat_id=%d&text=%s&parse_mode=Markdown", sendid, str)
-	http.Get(str1)
 
-}
 func Dbview(response http.ResponseWriter, request *http.Request) {
 	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
-	if err !=1 nil {
+	if err != nil {
 		log.Fatal(err)
 	}
 	defer db.Close()
