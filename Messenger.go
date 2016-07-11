@@ -90,8 +90,9 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 		if err != nil {
 			log.Fatal(err)
 		}
+		body, err := ioutil.ReadAll(Resp)
 		var updateresponse UpdateResponse
-		json.Unmarshal(Resp,&updateresponse)
+		json.Unmarshal(body,&updateresponse)
 		log.Println(updateresponse.ok)
 	}
 
