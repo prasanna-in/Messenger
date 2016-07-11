@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55b12824-9e70-44bb-bdaf-71b241ee354d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Update.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Messenger.go" afterPath="$PROJECT_DIR$/Messenger.go" />
     </list>
     <ignored path="Messenger.iws" />
@@ -27,8 +28,8 @@
       <file leaf-file-name="Messenger.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Messenger.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6952596">
-              <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.42437923">
+              <caret line="85" column="160" selection-start-line="85" selection-start-column="160" selection-end-line="85" selection-end-column="160" />
               <folding>
                 <element signature="e#14#146#0" expanded="true" />
               </folding>
@@ -517,29 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/types.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28893906">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-          <folding>
-            <marker date="1467878571000" expanded="true" signature="21:41" placeholder="..." />
-            <marker date="1467878571000" expanded="true" signature="83:96" placeholder="{...}" />
-            <marker date="1467878571000" expanded="true" signature="123:213" placeholder="{...}" />
-            <marker date="1467878571000" expanded="true" signature="232:255" placeholder="{...}" />
-            <marker date="1467878571000" expanded="true" signature="280:296" placeholder="{...}" />
-            <marker date="1467878571000" expanded="true" signature="317:449" placeholder="{...}" />
-            <marker date="1467878571000" expanded="true" signature="475:498" placeholder="{...}" />
-            <marker date="1467878571000" expanded="true" signature="528:579" placeholder="{...}" />
-            <marker date="1467878571000" expanded="true" signature="602:687" placeholder="{...}" />
-            <marker date="1467878571000" expanded="true" signature="711:789" placeholder="{...}" />
-            <marker date="1467878571000" expanded="true" signature="813:3502" placeholder="{...}" />
-            <marker date="1467878571000" expanded="true" signature="1776:2603" placeholder="/.../" />
-            <marker date="1467878571000" expanded="true" signature="3125:3291" placeholder="/.../" />
-            <marker date="1467878571000" expanded="true" signature="3504:3764" placeholder="/.../" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/go/src/io/ioutil/ioutil.go">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33182845">
@@ -711,10 +689,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Update.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1468209016000" expanded="true" signature="42:68" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/types.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.11738149">
+          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+          <folding>
+            <marker date="1467878571000" expanded="true" signature="21:41" placeholder="..." />
+            <marker date="1467878571000" expanded="true" signature="83:96" placeholder="{...}" />
+            <marker date="1467878571000" expanded="true" signature="123:213" placeholder="{...}" />
+            <marker date="1467878571000" expanded="true" signature="232:255" placeholder="{...}" />
+            <marker date="1467878571000" expanded="true" signature="280:296" placeholder="{...}" />
+            <marker date="1467878571000" expanded="true" signature="317:449" placeholder="{...}" />
+            <marker date="1467878571000" expanded="true" signature="475:498" placeholder="{...}" />
+            <marker date="1467878571000" expanded="true" signature="528:579" placeholder="{...}" />
+            <marker date="1467878571000" expanded="true" signature="602:687" placeholder="{...}" />
+            <marker date="1467878571000" expanded="true" signature="711:789" placeholder="{...}" />
+            <marker date="1467878571000" expanded="true" signature="813:3502" placeholder="{...}" />
+            <marker date="1467878571000" expanded="true" signature="1776:2603" placeholder="/.../" />
+            <marker date="1467878571000" expanded="true" signature="3125:3291" placeholder="/.../" />
+            <marker date="1467878571000" expanded="true" signature="3504:3764" placeholder="/.../" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Messenger.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6952596">
-          <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.42437923">
+          <caret line="85" column="160" selection-start-line="85" selection-start-column="160" selection-end-line="85" selection-end-column="160" />
           <folding>
             <element signature="e#14#146#0" expanded="true" />
           </folding>
