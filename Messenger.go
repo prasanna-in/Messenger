@@ -90,6 +90,8 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 			log.Fatal(err)
 		}
 	}
+	response.Header().Set("Server", "GO_Messenger_Bot")
+	response.WriteHeader(200)
 }
 func main() {
 	http.HandleFunc("/testing123", HttpHandler2)
