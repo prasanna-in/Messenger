@@ -82,10 +82,8 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 	var mbot1 Mbot
 	db.Where("Secretstring = ?",Secrestring).First(&mbot1)
 	log.Println(mbot1)
-	var str1 string
 	if mbot1.Secretstring == Secrestring{
 		str := fmt.Sprintf("https://api.telegram.org/bot249456369:AAHaHfsSSkiiEPeiwqnChNX16sbS4H-JHqM/sendMessage?chat_id=%d&text=%s", mbot1.Sendid, Message)
-		str1 = str
 		log.Println(str)
 		resp, err := http.Get(str)
 		log.Println(resp)
@@ -99,7 +97,7 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 func Probe(response http.ResponseWriter, request * http.Request)  {
 
 	str := "https://api.telegram.org/bot249456369:AAHaHfsSSkiiEPeiwqnChNX16sbS4H-JHqM/sendMessage?chat_id=-122886380&text=* PK was Here  hhh*"
-	resp,_:= http.Get(str1)
+	resp,_:= http.Get(str)
 	log.Println(resp)
 
 }
