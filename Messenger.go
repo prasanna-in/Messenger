@@ -27,7 +27,7 @@ func SendmessageInternal(sendid int, str string) {
 }
 
 func TelegramHandler(response http.ResponseWriter, request *http.Request) {
-	log.Println("Token Call Received")
+	log.Println("Telegram Handler ...")
 	var Telegramresponse TGUpdate
 	bodystring := request.Body
 	body, err := ioutil.ReadAll(bodystring)
@@ -48,6 +48,7 @@ func TelegramHandler(response http.ResponseWriter, request *http.Request) {
 			log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
 			mbot1.Sendid = Telegramresponse.Message.Chat.Id
 			db.Save(&mbot1)
+			SendmessageInternal(mbot1.Sendid,"Group Registered, You can add more users and have fun.")
 		}else {
 			log.Println("Token Already Registered ....")
 			SendmessageInternal(Telegramresponse.Message.Chat.Id,"Token already registered request new from shifu@thoughtworks.com")
