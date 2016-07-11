@@ -86,7 +86,7 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 	if mbot1.Secretstring == Secrestring{
 		str := fmt.Sprintf("https://api.telegram.org/bot249456369:AAHaHfsSSkiiEPeiwqnChNX16sbS4H-JHqM/sendMessage?chat_id=%d&text=%s&parse_mode=markdown", mbot1.Sendid, Message)
 		log.Println(str)
-		Resp, err := http.Get(str)
+		_, err := http.Get(str)
 		if err != nil {
 			log.Fatal(err)
 		}
