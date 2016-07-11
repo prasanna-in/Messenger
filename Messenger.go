@@ -41,6 +41,8 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request) {
 			log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
 			mbot1.Sendid = Telegramresponse.Message.Chat.Id
 			db.Save(&mbot1)
+		}else {
+			log.Println("Token Already Registered ....")
 		}
 	}
 
