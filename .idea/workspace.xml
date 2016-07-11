@@ -27,8 +27,8 @@
       <file leaf-file-name="Messenger.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Messenger.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18735892">
-              <caret line="85" column="165" selection-start-line="85" selection-start-column="165" selection-end-line="85" selection-end-column="165" />
+            <state vertical-scroll-proportion="0.6275395">
+              <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="131" />
               <folding>
                 <element signature="e#14#146#0" expanded="true" />
               </folding>
@@ -730,8 +730,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Messenger.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18735892">
-          <caret line="85" column="165" selection-start-line="85" selection-start-column="165" selection-end-line="85" selection-end-column="165" />
+        <state vertical-scroll-proportion="0.6275395">
+          <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="131" />
           <folding>
             <element signature="e#14#146#0" expanded="true" />
           </folding>

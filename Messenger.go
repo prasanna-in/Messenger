@@ -96,7 +96,7 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 }
 func Probe(response http.ResponseWriter, request * http.Request)  {
 
-	str := "https://api.telegram.org/bot249456369:AAHaHfsSSkiiEPeiwqnChNX16sbS4H-JHqM/sendMessage?chat_id=-122886380&text=* PK was Here  hhh*"
+	str := "https://api.telegram.org/bot249456369:AAHaHfsSSkiiEPeiwqnChNX16sbS4H-JHqM/sendMessage?chat_id=-122886380&text=Check"
 	resp,_:= http.Get(str)
 	log.Println(resp)
 
