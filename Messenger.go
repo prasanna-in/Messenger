@@ -57,11 +57,18 @@ func Dbcreate(response http.ResponseWriter, request *http.Request) {
 	defer db.Close()
 	name := request.FormValue("Name")
 	secretstring := request.FormValue("secret")
+	var mbot1 Mbot
+	db.Where("Secretstring = ?", secretstring).First(&mbot1)
+	if mbot1.Secretstring == secretstring {
+		log.Println("User secret alredy used try another one ....")
+
+	}else {
 	log.Println(secretstring)
 	mbot := Mbot{Name: name, Secretstring: secretstring}
 	db.NewRecord(mbot)
 	db.Create(&mbot)
 	log.Println(db.NewRecord(mbot))
+}
 
 }
 func Dbview(response http.ResponseWriter, request *http.Request) {
