@@ -22,7 +22,7 @@ type Mbot struct {
 }
 
 func SendmessageInternal(sendid int, str string) {
-	str1 := fmt.Sprintf("https://api.telegram.org/bot249456369:AAHaHfsSSkiiEPeiwqnChNX16sbS4H-JHqM/sendMessage?chat_id=%d&text=%s&parse_mode=Markdown", sendid, str)
+	str1 := fmt.Sprintf("https://api.telegram.org/"+os.Getenv("Bot_API")+"/sendMessage?chat_id=%d&text=%s&parse_mode=Markdown", sendid, str)
 	http.Get(str1)
 }
 
