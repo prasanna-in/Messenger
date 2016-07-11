@@ -19,6 +19,11 @@ type Mbot struct {
 	Secretstring string
 }
 
+func SendmessageInternal(sendid int, str string) {
+	str1 := fmt.Sprintf("https://api.telegram.org/bot249456369:AAHaHfsSSkiiEPeiwqnChNX16sbS4H-JHqM/sendMessage?chat_id=%d&text=%s&parse_mode=Markdown", sendid, str)
+	http.Get(str1)
+}
+
 func HttpHandler2(response http.ResponseWriter, request *http.Request) {
 	log.Println("Token Call Received")
 	var Telegramresponse TGUpdate
@@ -43,6 +48,7 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request) {
 			db.Save(&mbot1)
 		}else {
 			log.Println("Token Already Registered ....")
+			SendmessageInternal(Telegramresponse.Message.Chat.Id,"Token already registered ...")
 		}
 	}
 
