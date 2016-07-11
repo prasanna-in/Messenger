@@ -48,7 +48,7 @@ func HttpHandler2(response http.ResponseWriter, request *http.Request) {
 			db.Save(&mbot1)
 		}else {
 			log.Println("Token Already Registered ....")
-			SendmessageInternal(Telegramresponse.Message.Chat.Id,"Token already registered ...")
+			SendmessageInternal(Telegramresponse.Message.Chat.Id,"Token already registered request new from shifu@thoughtworks.com")
 		}
 	}
 
@@ -67,7 +67,7 @@ func Dbcreate(response http.ResponseWriter, request *http.Request) {
 	db.Where("Secretstring = ?", secretstring).First(&mbot1)
 	if mbot1.Secretstring == secretstring {
 		log.Println("User secret alredy used try another one ....")
-		fmt.Fprintf(response,"Token already registered request for a new one form shifu@thoughtworks.com")
+		fmt.Fprintf(response,"Token already registered request for a new one from shifu@thoughtworks.com")
 
 	}else {
 	log.Println(secretstring)
