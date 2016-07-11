@@ -90,11 +90,6 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 		if err != nil {
 			log.Fatal(err)
 		}
-		bodystring := Resp.Body
-		body, err := ioutil.ReadAll(bodystring)
-		var updateresponse UpdateResponse
-		json.Unmarshal(body,&updateresponse)
-		log.Println(updateresponse.ok)
 	}
 
 	response.Header().Set("Server", "GO_Messenger_Bot")
