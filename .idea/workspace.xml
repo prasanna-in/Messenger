@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/Messenger.go">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.6433409">
-              <caret line="50" column="106" selection-start-line="50" selection-start-column="106" selection-end-line="50" selection-end-column="106" />
+              <caret line="69" column="113" selection-start-line="69" selection-start-column="113" selection-end-line="69" selection-end-column="113" />
               <folding>
                 <element signature="e#14#146#0" expanded="true" />
               </folding>
@@ -316,7 +316,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Messenger.go</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -731,7 +739,7 @@
     <entry file="file://$PROJECT_DIR$/Messenger.go">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6433409">
-          <caret line="50" column="106" selection-start-line="50" selection-start-column="106" selection-end-line="50" selection-end-column="106" />
+          <caret line="69" column="113" selection-start-line="69" selection-start-column="113" selection-end-line="69" selection-end-column="113" />
           <folding>
             <element signature="e#14#146#0" expanded="true" />
           </folding>
