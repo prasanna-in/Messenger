@@ -27,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/Messenger.go">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.5936795">
-              <caret line="85" column="137" selection-start-line="85" selection-start-column="137" selection-end-line="85" selection-end-column="137" />
+              <caret line="85" column="160" selection-start-line="85" selection-start-column="160" selection-end-line="85" selection-end-column="160" />
               <folding>
                 <element signature="e#14#146#0" expanded="true" />
               </folding>
@@ -540,7 +540,7 @@
     <entry file="file://$PROJECT_DIR$/Messenger.go">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5936795">
-          <caret line="85" column="137" selection-start-line="85" selection-start-column="137" selection-end-line="85" selection-end-column="137" />
+          <caret line="85" column="160" selection-start-line="85" selection-start-column="160" selection-end-line="85" selection-end-column="160" />
           <folding>
             <element signature="e#14#146#0" expanded="true" />
           </folding>
