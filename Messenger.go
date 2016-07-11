@@ -1,3 +1,5 @@
+//Author : Prasanna Kanagasabai
+
 package main
 
 import (
@@ -92,6 +94,7 @@ func Dbview(response http.ResponseWriter, request *http.Request) {
 	log.Println(mbot1.Name,mbot1.Secretstring,mbot1.Sendid)
 
 }
+
 func Sendmessage(response http.ResponseWriter, request *http.Request) {
 	Secrestring := request.FormValue("secret")
 	Message := request.FormValue("text")
@@ -104,7 +107,8 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 	db.Where("Secretstring = ?",Secrestring).First(&mbot1)
 	log.Println(mbot1)
 	if mbot1.Secretstring == Secrestring{
-		str := fmt.Sprintf("https://api.telegram.org/bot249456369:AAHaHfsSSkiiEPeiwqnChNX16sbS4H-JHqM/sendMessage?chat_id=%d&text=%s&parse_mode=Markdown", mbot1.Sendid, Message)
+
+		str := fmt.Sprintf("https://api.telegram.org/"+os.Getenv("Bot_API")+"/sendMessage?chat_id=%d&text=%s&parse_mode=Markdown", mbot1.Sendid, Message)
 		log.Println(str)
 		resp, err := http.Get(str)
 		log.Println(resp)
