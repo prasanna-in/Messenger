@@ -45,6 +45,7 @@ func TelegramHandler(response http.ResponseWriter, request *http.Request) {
 	defer db.Close()
 	var Mbot1 Mbot
 	db.Where("Secretstring = ?",text).First(&Mbot1)
+	log.Println(Mbot1.Secretstring+"JK")
 	var validID = regexp.MustCompile(`Register \d\d\d\d\d\d`)
 	log.Println(validID.MatchString(text))
 	if validID.MatchString(text) == true {
