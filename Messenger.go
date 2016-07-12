@@ -12,6 +12,8 @@ import (
 	_ "github.com/lib/pq"
 	"strconv"
 	"fmt"
+	"regexp"
+	"strings"
 )
 
 type Mbot struct {
@@ -43,16 +45,22 @@ func TelegramHandler(response http.ResponseWriter, request *http.Request) {
 	defer db.Close()
 	var mbot1 Mbot
 	db.Where("Secretstring = ?",text).First(&mbot1)
-	if mbot1.Secretstring == text{
-		if mbot1.Sendid == 0 {
-			log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
-			mbot1.Sendid = Telegramresponse.Message.Chat.Id
-			db.Save(&mbot1)
-			SendmessageInternal(mbot1.Sendid,"Group Registered, You can add more users and have fun.")
-		}else {
-			log.Println("Token Already Registered ....")
-			SendmessageInternal(Telegramresponse.Message.Chat.Id,"Token already registered request new from shifu@thoughtworks.com")
+	var validID = regexp.MustCompile(`Register \d\d\d\d\d\d`)
+	if validID.MatchString(text) == true {
+		Actualtext := strings.Split("register 123456", " ")[1]
+		if mbot1.Secretstring == Actualtext {
+			if mbot1.Sendid == 0 {
+				log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
+				mbot1.Sendid = Telegramresponse.Message.Chat.Id
+				db.Save(&mbot1)
+				SendmessageInternal(mbot1.Sendid, "Group Registered, You can add more users and have fun.")
+			}else {
+				log.Println("Token Already Registered ....")
+				SendmessageInternal(Telegramresponse.Message.Chat.Id, "Token already registered request new from shifu@thoughtworks.com")
+			}
 		}
+	}else {
+		log.Println("Nothing I am bothered with ..... Heee :)")
 	}
 
 }
