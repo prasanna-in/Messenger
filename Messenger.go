@@ -46,8 +46,10 @@ func TelegramHandler(response http.ResponseWriter, request *http.Request) {
 	var mbot1 Mbot
 	db.Where("Secretstring = ?",text).First(&mbot1)
 	var validID = regexp.MustCompile(`Register \d\d\d\d\d\d`)
+	log.Println(validID.MatchString(text))
 	if validID.MatchString(text) == true {
 		Actualtext := strings.Split("register 123456", " ")[1]
+		log.Println(Actualtext)
 		if mbot1.Secretstring == Actualtext {
 			if mbot1.Sendid == 0 {
 				log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
