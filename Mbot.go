@@ -14,25 +14,22 @@ type Mbot struct {
 	Secretstring string
 }
 
-func(m Mbot) Create(name string,secret string) string {
+func(m Mbot) Create() string {
 	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer db.Close()
 	var mbot1 Mbot
-	db.Where("Secretstring = ?", secret).First(&mbot1)
-	if mbot1.Secretstring == secret {
+	db.Where("Secretstring = ?", m.Secretstring).First(&mbot1)
+	if mbot1.Secretstring == m.Secretstring {
 		log.Println("User secret alredy used try another one ....")
 		return "Token already registered request for a new one from shifu@thoughtworks.com"
 
 	}else {
-		mbot := Mbot{Name: name, Secretstring: secret}
-		db.NewRecord(mbot)
-		db.Create(&mbot)
-		//log.Println(db.NewRecord(mbot))
+		db.NewRecord(m)
+		db.Create(&m)
 		log.Println("Group Created ....")
-		log.Println(m.Name+"PRasanna")
 		return "Group has been created... "
 	}
 
