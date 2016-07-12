@@ -32,8 +32,9 @@ func(m Mbot) Create(name string,secret string) string {
 		db.Create(&mbot)
 		//log.Println(db.NewRecord(mbot))
 		log.Println("Group Created ....")
+		log.Println(m.Name+"PRasanna")
 		return "Group has been created... "
 	}
-	log.Println(m.Name+"PRasanna")
+
 	return "1"
 }
