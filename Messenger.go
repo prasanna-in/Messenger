@@ -66,6 +66,7 @@ func Dbcreate(response http.ResponseWriter, request *http.Request) {
 	name := request.FormValue("Name")
 	secretstring := request.FormValue("secret")
 	var mb Mbot
+	mb.Name ="Rasanna"
 	mb.Create(name,secretstring)
 
 
