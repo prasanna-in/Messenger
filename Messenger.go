@@ -16,12 +16,7 @@ import (
 	"strings"
 )
 
-type Mbot struct {
-	gorm.Model
-	Name         string
-	Sendid       int
-	Secretstring string
-}
+
 
 func SendmessageInternal(sendid int, str string) {
 	str1 := fmt.Sprintf("https://api.telegram.org/"+os.Getenv("Bot_API")+"/sendMessage?chat_id=%d&text=%s&parse_mode=Markdown", sendid, str)
