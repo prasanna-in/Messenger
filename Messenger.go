@@ -43,20 +43,20 @@ func TelegramHandler(response http.ResponseWriter, request *http.Request) {
 		log.Fatal(err)
 	}
 	defer db.Close()
-	var mbot1 Mbot
-	db.Where("Secretstring = ?",text).First(&mbot1)
+	var Mbot1 Mbot
+	db.Where("Secretstring = ?",text).First(&Mbot1)
 	var validID = regexp.MustCompile(`Register \d\d\d\d\d\d`)
 	log.Println(validID.MatchString(text))
 	if validID.MatchString(text) == true {
 		Actualtext := strings.Split("register 123456", " ")[1]
 		log.Println(Actualtext)
-		log.Println(mbot1.Secretstring)
-		if mbot1.Secretstring == Actualtext {
-			if mbot1.Sendid == 0 {
+		log.Println(Mbot1.Secretstring)
+		if Mbot1.Secretstring == Actualtext {
+			if Mbot1.Sendid == 0 {
 				log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
-				mbot1.Sendid = Telegramresponse.Message.Chat.Id
-				db.Save(&mbot1)
-				SendmessageInternal(mbot1.Sendid, "Group Registered, You can add more users and have fun.")
+				Mbot1.Sendid = Telegramresponse.Message.Chat.Id
+				db.Save(&Mbot1)
+				SendmessageInternal(Mbot1.Sendid, "Group Registered, You can add more users and have fun.")
 			}else {
 				log.Println("Token Already Registered ....")
 				SendmessageInternal(Telegramresponse.Message.Chat.Id, "Token already registered request new from shifu@thoughtworks.com")
