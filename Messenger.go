@@ -61,12 +61,9 @@ func TelegramHandler(response http.ResponseWriter, request *http.Request) {
 }
 
 func Dbcreate(response http.ResponseWriter, request *http.Request) {
-	name := request.FormValue("Name")
-	secretstring := request.FormValue("secret")
-	mb := Mbot{
-		name: name,
-		secretstring: secretstring,
-	}
+	Name1 := request.FormValue("Name")
+	Secret := request.FormValue("secret")
+	mb := Mbot{Name:Name1,Secretstring:Secret}
 	str := mb.Create()
 	fmt.Fprintf(response,str)
 }
