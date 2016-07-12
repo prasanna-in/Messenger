@@ -59,6 +59,8 @@ func TelegramHandler(response http.ResponseWriter, request *http.Request) {
 				SendmessageInternal(Telegramresponse.Message.Chat.Id, "Token already registered request new from shifu@thoughtworks.com")
 			}
 		}
+	}else {
+		log.Println("We dont care about anyother message ....")
 	}
 
 }
