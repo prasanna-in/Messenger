@@ -14,12 +14,17 @@ type Mbot struct {
 	Secretstring string
 }
 
-func(m Mbot) Create() string {
+func db() *gorm.DB {
 	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer db.Close()
+	return db
+
+}
+func(m Mbot) Create() string {
+	db := db()
 	var mbot1 Mbot
 	db.Where("Secretstring = ?", m.Secretstring).First(&mbot1)
 	if mbot1.Secretstring == m.Secretstring {
