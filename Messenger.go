@@ -38,34 +38,27 @@ func TelegramHandler(response http.ResponseWriter, request *http.Request) {
 	}
 	json.Unmarshal(body, &Telegramresponse)
 	text := Telegramresponse.Message.Text
-	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer db.Close()
-	var Mbot1 Mbot
-	db.Where("Secretstring = ?",text).First(&Mbot1)
-	log.Println(Mbot1.Secretstring+"JK")
 	var validID = regexp.MustCompile(`Register \d\d\d\d\d\d`)
-	log.Println(validID.MatchString(text))
 	if validID.MatchString(text) == true {
-		mbo2 := Mbot1
 		Actualtext := strings.Split("register 123456", " ")[1]
-		log.Println(Actualtext)
-		log.Println(mbo2.Secretstring+"pK")
-		if Mbot1.Secretstring == Actualtext {
-			if Mbot1.Sendid == 0 {
+		db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
+		if err != nil {
+			log.Fatal(err)
+		}
+		defer db.Close()
+		var mbot1 Mbot
+		db.Where("Secretstring = ?", Actualtext).First(&mbot1)
+		if mbot1.Secretstring == Actualtext {
+			if mbot1.Sendid == 0 {
 				log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
-				Mbot1.Sendid = Telegramresponse.Message.Chat.Id
-				db.Save(&Mbot1)
-				SendmessageInternal(Mbot1.Sendid, "Group Registered, You can add more users and have fun.")
+				mbot1.Sendid = Telegramresponse.Message.Chat.Id
+				db.Save(&mbot1)
+				SendmessageInternal(mbot1.Sendid, "Group Registered, You can add more users and have fun.")
 			}else {
 				log.Println("Token Already Registered ....")
 				SendmessageInternal(Telegramresponse.Message.Chat.Id, "Token already registered request new from shifu@thoughtworks.com")
 			}
 		}
-	}else {
-		log.Println("Nothing I am bothered with ..... Heee :)")
 	}
 
 }
