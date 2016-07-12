@@ -35,7 +35,7 @@ func TelegramHandler(response http.ResponseWriter, request *http.Request) {
 	text := Telegramresponse.Message.Text
 	var validID = regexp.MustCompile(`Register \d\d\d\d\d\d`)
 	if validID.MatchString(text) == true {
-		Actualtext := strings.Split("register 123456", " ")[1]
+		Actualtext := strings.Split(text, " ")[1]
 		db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 		if err != nil {
 			log.Fatal(err)
