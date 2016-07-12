@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55b12824-9e70-44bb-bdaf-71b241ee354d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Mbot.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mbot.go" afterPath="$PROJECT_DIR$/Mbot.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Messenger.go" afterPath="$PROJECT_DIR$/Messenger.go" />
     </list>
     <ignored path="Messenger.iws" />
@@ -25,12 +25,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Messenger.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Messenger.go">
+      <file leaf-file-name="Mbot.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Mbot.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50790066">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-              <folding />
+            <state vertical-scroll-proportion="0.7968397">
+              <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+              <folding>
+                <element signature="e#14#86#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -325,7 +327,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="160" selection-start-line="85" selection-start-column="160" selection-end-line="85" selection-end-column="160" />
-          <folding />
+          <folding>
+            <marker date="1468305131000" expanded="true" signature="54:200" placeholder="..." />
+            <marker date="1468305131000" expanded="true" signature="253:410" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="486:1681" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="640:661" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="839:1611" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="976:999" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="1131:1608" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="1157:1418" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="1423:1604" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="1616:1678" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="1750:1880" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="1948:2158" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="2026:2047" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="2230:2902" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="2390:2411" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="2559:2820" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="2794:2817" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="2916:3134" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -528,13 +549,6 @@
             <marker date="1452714508000" expanded="true" signature="17030:17128" placeholder="{...}" />
             <marker date="1452714508000" expanded="true" signature="17183:17231" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Update.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1222,22 +1236,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mbot.go">
+    <entry file="file://$PROJECT_DIR$/Update.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4401806">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1468303311000" expanded="true" signature="21:73" placeholder="..." />
-            <marker date="1468303311000" expanded="true" signature="92:167" placeholder="{...}" />
+            <marker date="1468217246000" expanded="true" signature="42:68" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Messenger.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50790066">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
+        <state vertical-scroll-proportion="0.66139954">
+          <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+          <folding>
+            <marker date="1468305131000" expanded="true" signature="54:200" placeholder="..." />
+            <marker date="1468305131000" expanded="true" signature="253:410" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="486:1681" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="640:661" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="839:1611" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="976:999" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="1131:1608" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="1157:1418" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="1423:1604" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="1616:1678" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="1750:1880" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="1948:2158" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="2026:2047" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="2230:2902" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="2390:2411" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="2559:2820" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="2794:2817" placeholder="{...}" />
+            <marker date="1468305131000" expanded="true" signature="2916:3134" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mbot.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7968397">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+          <folding>
+            <element signature="e#14#86#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
