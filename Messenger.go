@@ -50,7 +50,7 @@ func TelegramHandler(response http.ResponseWriter, request *http.Request) {
 	if validID.MatchString(text) == true {
 		Actualtext := strings.Split("register 123456", " ")[1]
 		log.Println(Actualtext)
-		log.Println(Mbot1.Secretstring)
+		log.Println(Mbot1.Secretstring+"pK")
 		if Mbot1.Secretstring == Actualtext {
 			if Mbot1.Sendid == 0 {
 				log.Println("The Group ID is : " + strconv.Itoa(Telegramresponse.Message.Chat.Id))
