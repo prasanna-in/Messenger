@@ -25,7 +25,6 @@ func db() *gorm.DB {
 	if err != nil {
 		log.Fatal(err)
 	}
-	defer db.Close()
 	d.con = db
 	return d.con
 }
