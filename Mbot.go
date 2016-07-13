@@ -20,7 +20,7 @@ type Dbcon struct {
 var Db Dbcon
 
 func db() *gorm.DB {
-	if Db == nil {
+	if Db.con == nil {
 		var d Dbcon
 		db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 		if err != nil {
