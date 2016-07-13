@@ -3,7 +3,6 @@ package main
 import (
 	"github.com/jinzhu/gorm"
 	"log"
-	"fmt"
 )
 
 type Mbot struct {
