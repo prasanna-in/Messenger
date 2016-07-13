@@ -17,16 +17,19 @@ type Mbot struct {
 type Dbcon struct {
 	con *gorm.DB
 }
-
+var Db Dbcon
 
 func db() *gorm.DB {
-	var d Dbcon
-	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
-	if err != nil {
-		log.Fatal(err)
-	}
-	d.con = db
-	return d.con
+	if Db == nil {
+		var d Dbcon
+		db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
+		if err != nil {
+			log.Fatal(err)
+		}
+		d.con = db
+		Db.con = d
+		return Db.con
+	}else {return Db.con}
 }
 func(m Mbot) Create() string {
 	db := db()
