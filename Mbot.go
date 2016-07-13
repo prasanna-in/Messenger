@@ -21,13 +21,11 @@ var Db Dbcon
 
 func db() *gorm.DB {
 	if Db.con == nil {
-		var d Dbcon
 		db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 		if err != nil {
 			log.Fatal(err)
 		}
-		d.con = db
-		Db.con = d
+		Db.con = db
 		return Db.con
 	}else {return Db.con}
 }
