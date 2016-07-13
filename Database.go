@@ -14,23 +14,23 @@ type Mbot struct {
 	Secretstring string
 }
 
-type Dbcon struct {
-	con *gorm.DB
-}
+
+type Dbcon *gorm.DB
+
 var Db Dbcon
 
-func db() *gorm.DB {
-	if Db.con == nil {
+func Get_Database_Connection() *gorm.DB {
+	if Db == nil {
 		db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 		if err != nil {
 			log.Fatal(err)
 		}
-		Db.con = db
-		return Db.con
-	}else {return Db.con}
+		Db = db
+		return Db
+	}else {return Db}
 }
 func(m Mbot) Create() string {
-	db := db()
+	db := Get_Database_Connection()
 	var mbot1 Mbot
 	db.Where("Secretstring = ?", m.Secretstring).First(&mbot1)
 	if mbot1.Secretstring == m.Secretstring {
