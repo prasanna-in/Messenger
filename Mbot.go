@@ -14,14 +14,20 @@ type Mbot struct {
 	Secretstring string
 }
 
+type Dbcon struct {
+	con *gorm.DB
+}
+
+
 func db() *gorm.DB {
+	var d Dbcon
 	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer db.Close()
-	return db
-
+	d.con = db
+	return d.con
 }
 func(m Mbot) Create() string {
 	db := db()
