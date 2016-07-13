@@ -4,11 +4,10 @@ import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/lib/pq"
 	"log"
-	"os"
 )
 
 func Create_Db_Connection(connectionString string) *gorm.DB {
-	db,err := gorm.Open(connectionString)
+	db,err := gorm.Open("postgres",connectionString)
 	if err != nil{
 		log.Fatal("Database Connection did not happen ....")
 	}

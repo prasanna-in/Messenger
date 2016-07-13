@@ -67,7 +67,7 @@ func (e *Env) Dbcreate(response http.ResponseWriter, request *http.Request) {
 	Name1 := request.FormValue("Name")
 	Secret := request.FormValue("secret")
 	mb := Mbot{Name:Name1,Secretstring:Secret}
-	str := createBot(e.db,mb)
+	str := createBot(e.db,&mb)
 	fmt.Fprintf(response,str)
 }
 
