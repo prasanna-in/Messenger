@@ -15,6 +15,10 @@ import (
 	"regexp"
 	"strings")
 
+type Env struct {
+	db *gorm.DB
+
+}
 
 
 func SendmessageInternal(sendid int, str string) {
@@ -59,11 +63,11 @@ func TelegramHandler(response http.ResponseWriter, request *http.Request) {
 
 }
 
-func Dbcreate(response http.ResponseWriter, request *http.Request) {
+func (e *Env) Dbcreate(response http.ResponseWriter, request *http.Request) {
 	Name1 := request.FormValue("Name")
 	Secret := request.FormValue("secret")
 	mb := Mbot{Name:Name1,Secretstring:Secret}
-	str := mb.Create()
+	str := createBot(e.db,mb)
 	fmt.Fprintf(response,str)
 }
 
@@ -106,8 +110,10 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 }
 
 func main() {
+	db := Create_Db_Connection(os.Getenv("DATABASE_URL"))
+	env := &Env{db: db}
 	http.HandleFunc("/testing123", TelegramHandler)
-	http.HandleFunc("/Create", Dbcreate)
+	http.HandleFunc("/Create", env.Dbcreate)
 	http.HandleFunc("/view", Dbview)
 	http.HandleFunc("/Sendmessage",Sendmessage)
 	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
