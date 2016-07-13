@@ -72,15 +72,9 @@ func (e *Env) Dbcreate(response http.ResponseWriter, request *http.Request) {
 }
 
 
-func Dbview(response http.ResponseWriter, request *http.Request) {
-	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer db.Close()
-	var mbot1 Mbot
-	db.Last(&mbot1)
-	log.Println(mbot1.Name,mbot1.Secretstring,mbot1.Sendid)
+func (e *Env) Dbview(response http.ResponseWriter, request *http.Request) {
+	str := lastBotCreated(e.db)
+	fmt.Fprintf(response,str)
 
 }
 
@@ -114,7 +108,7 @@ func main() {
 	env := &Env{db: db}
 	http.HandleFunc("/testing123", TelegramHandler)
 	http.HandleFunc("/Create", env.Dbcreate)
-	http.HandleFunc("/view", Dbview)
+	http.HandleFunc("/view", env.Dbview)
 	http.HandleFunc("/Sendmessage",Sendmessage)
 	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }

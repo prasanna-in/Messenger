@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/jinzhu/gorm"
 	"log"
+	"fmt"
 )
 
 type Mbot struct {
@@ -26,4 +27,10 @@ func createBot(db *gorm.DB,m *Mbot) string {
 	}
 	return "This shoud never hit ...."
 
+}
+
+func lastBotCreated(db *gorm.DB) string  {
+	var mbot1 Mbot
+	db.Last(&mbot1)
+	return "The Last Group created is "+mbot1.Name+" with Secretkey "+mbot1.Secretstring
 }
