@@ -26,6 +26,7 @@ func Create_Db_Connection(connectionString string) *gorm.DB {
 //
 //var Db Dbcon
 //
+// Global method not going to use this so discarding it ...
 //func Get_Database_Connection() *gorm.DB {
 //	if Db == nil {
 //		db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))

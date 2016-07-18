@@ -78,7 +78,19 @@ func (e *Env) Dbview(response http.ResponseWriter, request *http.Request) {
 
 }
 
+func messageSender(sendID int, message string)  {
+	str := fmt.Sprintf("https://api.telegram.org/"+os.Getenv("Bot_API")+"/sendMessage?chat_id=%d&text=%s&parse_mode=Markdown", sendID, message)
+	log.Println(str)
+	resp, err := http.Get(str)
+	log.Println(resp)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
 func Sendmessage(response http.ResponseWriter, request *http.Request) {
+	response.Header().Set("Server", "GO_Messenger_Bot")
+	response.WriteHeader(200)
 	Secrestring := request.FormValue("secret")
 	Message := request.FormValue("text")
 	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
@@ -90,17 +102,8 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 	db.Where("Secretstring = ?",Secrestring).First(&mbot1)
 	log.Println(mbot1)
 	if mbot1.Secretstring == Secrestring{
-
-		str := fmt.Sprintf("https://api.telegram.org/"+os.Getenv("Bot_API")+"/sendMessage?chat_id=%d&text=%s&parse_mode=Markdown", mbot1.Sendid, Message)
-		log.Println(str)
-		resp, err := http.Get(str)
-		log.Println(resp)
-		if err != nil {
-			log.Fatal(err)
-		}
+		messageSender(mbot1.Sendid,Message)
 	}
-	response.Header().Set("Server", "GO_Messenger_Bot")
-	response.WriteHeader(200)
 }
 
 func main() {
