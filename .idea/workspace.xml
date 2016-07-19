@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55b12824-9e70-44bb-bdaf-71b241ee354d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/GOPATH__Messenger_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/GOPATH__Messenger_.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bots.go" afterPath="$PROJECT_DIR$/Bots.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Database.go" afterPath="$PROJECT_DIR$/Database.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Messenger.go" afterPath="$PROJECT_DIR$/Messenger.go" />
     </list>
@@ -28,11 +31,12 @@
       <file leaf-file-name="Messenger.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Messenger.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6275395">
-              <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.43526787">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
                 <element signature="e#47#199#0" expanded="true" />
-                <marker date="1468816500000" expanded="true" signature="1857:1901" placeholder="/.../" />
+                <marker date="1468900064000" expanded="true" signature="201:242" placeholder="/.../" />
+                <marker date="1468900064000" expanded="true" signature="1900:1942" placeholder="/.../" />
               </folding>
             </state>
           </provider>
@@ -73,7 +77,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="778" />
+    <option name="height" value="785" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -100,7 +104,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -121,7 +125,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,26 +299,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="778" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="785" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16388889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41402116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41284403" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -338,10 +342,23 @@
     <entry file="file://$PROJECT_DIR$/Messenger.go">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+          <folding>
+            <element signature="e#47#199#0" expanded="true" />
+            <marker date="1468900064000" expanded="true" signature="201:242" placeholder="/.../" />
+            <marker date="1468900064000" expanded="true" signature="1900:1942" placeholder="/.../" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Messenger.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="85" column="160" selection-start-line="85" selection-start-column="160" selection-end-line="85" selection-end-column="160" />
           <folding>
             <element signature="e#47#199#0" expanded="true" />
-            <marker date="1468816500000" expanded="true" signature="1857:1901" placeholder="/.../" />
+            <marker date="1468900064000" expanded="true" signature="201:242" placeholder="/.../" />
+            <marker date="1468900064000" expanded="true" signature="1900:1942" placeholder="/.../" />
           </folding>
         </state>
       </provider>
@@ -1040,9 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1468217246000" expanded="true" signature="42:68" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1050,7 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1246,7 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1254,45 +1266,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.101580136">
           <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Database.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94808125">
-          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
-          <folding>
-            <marker date="1468404399000" expanded="true" signature="21:80" placeholder="..." />
-            <marker date="1468404399000" expanded="true" signature="142:281" placeholder="{...}" />
-            <marker date="1468404399000" expanded="true" signature="208:267" placeholder="{...}" />
-            <marker date="1468404399000" expanded="true" signature="282:1215" placeholder="/.../" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bots.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33182845">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.6651786">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="28" />
           <folding>
-            <marker date="1468403572000" expanded="true" signature="21:57" placeholder="..." />
-            <marker date="1468403572000" expanded="true" signature="76:151" placeholder="{...}" />
-            <marker date="1468403572000" expanded="true" signature="196:612" placeholder="{...}" />
-            <marker date="1468403572000" expanded="true" signature="315:456" placeholder="{...}" />
-            <marker date="1468403572000" expanded="true" signature="461:573" placeholder="{...}" />
-            <marker date="1468403572000" expanded="true" signature="655:777" placeholder="{...}" />
+            <marker date="1468899963000" expanded="true" signature="21:57" placeholder="..." />
+            <marker date="1468899963000" expanded="true" signature="76:151" placeholder="{...}" />
+            <marker date="1468899963000" expanded="true" signature="192:608" placeholder="{...}" />
+            <marker date="1468899963000" expanded="true" signature="311:452" placeholder="{...}" />
+            <marker date="1468899963000" expanded="true" signature="457:569" placeholder="{...}" />
+            <marker date="1468899963000" expanded="true" signature="649:771" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.234375">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <marker date="1468900064000" expanded="true" signature="21:80" placeholder="..." />
+            <marker date="1468900064000" expanded="true" signature="106:158" placeholder="{...}" />
+            <marker date="1468900064000" expanded="true" signature="175:189" placeholder="{...}" />
+            <marker date="1468900064000" expanded="true" signature="246:390" placeholder="{...}" />
+            <marker date="1468900064000" expanded="true" signature="312:371" placeholder="{...}" />
+            <marker date="1468900064000" expanded="true" signature="391:1324" placeholder="/.../" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Messenger.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6275395">
-          <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.43526787">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
             <element signature="e#47#199#0" expanded="true" />
-            <marker date="1468816500000" expanded="true" signature="1857:1901" placeholder="/.../" />
+            <marker date="1468900064000" expanded="true" signature="201:242" placeholder="/.../" />
+            <marker date="1468900064000" expanded="true" signature="1900:1942" placeholder="/.../" />
           </folding>
         </state>
       </provider>

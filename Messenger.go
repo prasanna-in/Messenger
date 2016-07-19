@@ -15,8 +15,13 @@ import (
 	"regexp"
 	"strings")
 
+//type Env struct {
+//	db *gorm.DB
+//
+//}
+
 type Env struct {
-	db *gorm.DB
+	db Database
 
 }
 
@@ -67,13 +72,13 @@ func (e *Env) Dbcreate(response http.ResponseWriter, request *http.Request) {
 	Name1 := request.FormValue("Name")
 	Secret := request.FormValue("secret")
 	mb := Mbot{Name:Name1,Secretstring:Secret}
-	str := createBot(e.db,&mb)
-	fmt.Fprintf(response,str)
+	str := e.db.createBot(mb)
+	fmt.Fprintln(response,str)
 }
 
 
 func (e *Env) Dbview(response http.ResponseWriter, request *http.Request) {
-	str := lastBotCreated(e.db)
+	str := e.db.lastBotCreated()
 	fmt.Fprintf(response,str)
 
 }
@@ -108,7 +113,7 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 
 func main() {
 	db := Create_Db_Connection(os.Getenv("DATABASE_URL"))
-	env := &Env{db: db}
+	env := &Env{db}
 	http.HandleFunc("/testing123", TelegramHandler)
 	http.HandleFunc("/Create", env.Dbcreate)
 	http.HandleFunc("/view", env.Dbview)

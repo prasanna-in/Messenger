@@ -6,12 +6,22 @@ import (
 	"log"
 )
 
-func Create_Db_Connection(connectionString string) *gorm.DB {
+type Database interface {
+	createBot(Mbot) string
+	lastBotCreated() string
+}
+
+type DB struct {
+	*gorm.DB
+
+}
+
+func Create_Db_Connection(connectionString string) *DB {
 	db,err := gorm.Open("postgres",connectionString)
 	if err != nil{
 		log.Fatal("Database Connection did not happen ....")
 	}
-	return db
+	return &DB{db}
 
 }
 //type Mbot struct {

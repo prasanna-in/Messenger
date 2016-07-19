@@ -12,7 +12,7 @@ type Mbot struct {
 	Secretstring string
 }
 
-func createBot(db *gorm.DB,m *Mbot) string {
+func (db *DB) createBot(m Mbot) string {
 	var mbot1 Mbot
 	db.Where("Secretstring = ?", m.Secretstring).First(&mbot1)
 	if mbot1.Secretstring == m.Secretstring {
@@ -28,7 +28,7 @@ func createBot(db *gorm.DB,m *Mbot) string {
 
 }
 
-func lastBotCreated(db *gorm.DB) string  {
+func (db *DB) lastBotCreated() string  {
 	var mbot1 Mbot
 	db.Last(&mbot1)
 	return "The Last Group created is "+mbot1.Name+" with Secretkey "+mbot1.Secretstring
