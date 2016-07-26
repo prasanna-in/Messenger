@@ -113,7 +113,7 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 func (e Env) All(response http.ResponseWriter,request *http.Request)  {
 	str := e.db.Allbots()
 	for _,bot := range(str) {
-		fmt.Fprintf(response,"%s, %s, %d\n", bot.Name,bot.Secretstring,bot.Sendid)
+		fmt.Fprintf(response,"%s, %s, %d\n\n", bot.Name,bot.Secretstring,bot.Sendid)
 
 	}
 }
