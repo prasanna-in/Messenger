@@ -36,9 +36,9 @@ func TestAll(test *testing.T)  {
 	
 }
 
-func TestDbview(test *testing.T)  {
-	rec := httptest.NewRecorder()
-	req,_ := http.NewRequest("GET","/View",nil)
-
-
-}
+//func TestDbview(test *testing.T)  {
+//	rec := httptest.NewRecorder()
+//	req,_ := http.NewRequest("GET","/View",nil)
+//
+//
+//}
