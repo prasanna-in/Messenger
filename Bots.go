@@ -35,7 +35,8 @@ func (db *DB) lastBotCreated() string  {
 }
 
 func (db *DB) Allbots() string {
-	rows,_ := db.Rows()
-	log.Println(rows)
+	var bots []Mbot
+	db.Find(&bots)
+	log.Println(bots)
 	return  "    "
 }
