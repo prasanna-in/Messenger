@@ -34,9 +34,8 @@ func (db *DB) lastBotCreated() string  {
 	return "The Last Group created is "+mbot1.Name+" with Secretkey "+mbot1.Secretstring
 }
 
-func (db *DB) Allbots() []Mbot {
+func (db *DB) Allbots() string {
 	rows,_ := db.Rows()
 	log.Println(rows)
-	m := make([]*Mbot,0)
-	return &m
+	return  "    "
 }
