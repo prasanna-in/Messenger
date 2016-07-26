@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55b12824-9e70-44bb-bdaf-71b241ee354d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Messenger_test.go" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bots.go" afterPath="$PROJECT_DIR$/Bots.go" />
     </list>
     <ignored path="Messenger.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,14 +24,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Messenger.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Messenger.go">
+      <file leaf-file-name="Bots.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Bots.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5400943">
-              <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
-              <folding>
-                <marker date="1469503335000" expanded="true" signature="201:242" placeholder="/.../" />
-              </folding>
+            <state vertical-scroll-proportion="0.7877358">
+              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,8 +57,8 @@
         <option value="$PROJECT_DIR$/models/Database.go" />
         <option value="$PROJECT_DIR$/Messenger_test.go" />
         <option value="$PROJECT_DIR$/Database.go" />
-        <option value="$PROJECT_DIR$/Bots.go" />
         <option value="$PROJECT_DIR$/Messenger.go" />
+        <option value="$PROJECT_DIR$/Bots.go" />
       </list>
     </option>
   </component>
@@ -295,9 +293,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="778" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16388889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16388889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -476,29 +474,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Bots.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8584906">
-          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-          <folding>
-            <marker date="1469502995000" expanded="false" signature="21:57" placeholder="..." />
-            <marker date="1469502995000" expanded="true" signature="76:151" placeholder="{...}" />
-            <marker date="1469502995000" expanded="true" signature="192:608" placeholder="{...}" />
-            <marker date="1469502995000" expanded="true" signature="311:452" placeholder="{...}" />
-            <marker date="1469502995000" expanded="true" signature="457:569" placeholder="{...}" />
-            <marker date="1469502995000" expanded="true" signature="649:771" placeholder="{...}" />
-            <marker date="1469502995000" expanded="true" signature="804:879" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Messenger.go">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5400943">
           <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
           <folding>
+            <marker date="1469503335000" expanded="false" signature="54:199" placeholder="..." />
             <marker date="1469503335000" expanded="true" signature="201:242" placeholder="/.../" />
+            <marker date="1469503335000" expanded="true" signature="260:277" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="329:486" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="562:1744" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="716:737" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="915:1674" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="1039:1062" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="1194:1671" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="1220:1481" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="1486:1667" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="1679:1741" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="1822:1999" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="1910:1942" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="2076:2137" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="2187:2433" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="2410:2431" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="2505:2958" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="2745:2766" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="2914:2956" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="3029:3048" placeholder="{...}" />
+            <marker date="1469503335000" expanded="true" signature="3061:3393" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bots.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7877358">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

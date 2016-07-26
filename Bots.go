@@ -38,5 +38,5 @@ func (db *DB) Allbots() []Mbot {
 	rows,_ := db.Rows()
 	log.Println(rows)
 	m := make([]*Mbot,0)
-	return m
+	return &m
 }
