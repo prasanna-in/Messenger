@@ -110,13 +110,16 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 		messageSender(mbot1.Sendid,Message)
 	}
 }
-
+func (e Env) All(response http.ResponseWriter,request *http.Request)  {
+	e.db.Allbots()
+}
 func main() {
 	db := Create_Db_Connection(os.Getenv("DATABASE_URL"))
 	env := &Env{db}
 	http.HandleFunc("/testing123", TelegramHandler)
 	http.HandleFunc("/Create", env.Dbcreate)
 	http.HandleFunc("/view", env.Dbview)
+	http.HandleFunc("/All", env.All)
 	http.HandleFunc("/Sendmessage",Sendmessage)
 	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }
