@@ -112,7 +112,10 @@ func Sendmessage(response http.ResponseWriter, request *http.Request) {
 }
 func (e Env) All(response http.ResponseWriter,request *http.Request)  {
 	str := e.db.Allbots()
-	fmt.Fprintln(response,str)
+	for _,bot := range(str) {
+		fmt.Fprintf("%s", bot.Name)
+
+	}
 }
 func main() {
 	db := Create_Db_Connection(os.Getenv("DATABASE_URL"))

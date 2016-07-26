@@ -9,7 +9,7 @@ import (
 type Database interface {
 	createBot(Mbot) string
 	lastBotCreated() string
-	Allbots() string
+	Allbots() []Mbot
 }
 
 type DB struct {
