@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55b12824-9e70-44bb-bdaf-71b241ee354d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bots.go" afterPath="$PROJECT_DIR$/Bots.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Database.go" afterPath="$PROJECT_DIR$/Database.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Messenger.go" afterPath="$PROJECT_DIR$/Messenger.go" />
     </list>
     <ignored path="Messenger.iws" />
@@ -29,11 +27,11 @@
       <file leaf-file-name="Messenger.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Messenger.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45990565">
-              <caret line="115" column="43" selection-start-line="115" selection-start-column="43" selection-end-line="115" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.5306604">
+              <caret line="117" column="9" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
               <folding>
                 <element signature="e#47#199#0" expanded="true" />
-                <marker date="1469506401000" expanded="true" signature="201:242" placeholder="/.../" />
+                <marker date="1469506662000" expanded="true" signature="201:242" placeholder="/.../" />
               </folding>
             </state>
           </provider>
@@ -497,11 +495,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Messenger.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45990565">
-          <caret line="115" column="43" selection-start-line="115" selection-start-column="43" selection-end-line="115" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.5306604">
+          <caret line="117" column="9" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
           <folding>
             <element signature="e#47#199#0" expanded="true" />
-            <marker date="1469506401000" expanded="true" signature="201:242" placeholder="/.../" />
+            <marker date="1469506662000" expanded="true" signature="201:242" placeholder="/.../" />
           </folding>
         </state>
       </provider>
